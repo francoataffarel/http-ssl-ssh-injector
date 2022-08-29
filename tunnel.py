@@ -113,7 +113,7 @@ class Tun(injector):
 	        af, socktype, proto, canonname, sa = res
 	        try:
 	            sockt = socket.socket(af, socktype, proto)
-		    sockt.close()
+				sockt.close()
 		except OSError as msg:
 	            self.logs(str(msg))
 	            continue
